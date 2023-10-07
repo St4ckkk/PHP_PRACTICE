@@ -115,10 +115,8 @@
   <body
     class="d-flex justify-content-center h-100vh align-items-center py-4 bg-body-tertiary"
 >
-    </div>
-
     <main class="form-signin w-100 m-auto">
-      <form>
+      <form method="POST" action="_handleLogin.php">
         <h1 class="h3 mb-3 fw-bold text-center">Please sign in</h1>
 
         <div class="form-floating mb-2">
@@ -127,6 +125,7 @@
             type="email"
             class="form-control"
             id="floatingInput"
+            name="email"
             placeholder="name@example.com"
           />
           
@@ -137,6 +136,7 @@
             type="password"
             class="form-control"
             id="floatingPassword"
+            name="pass"
             placeholder="Password"
           />
           
@@ -156,7 +156,7 @@
         <button class="btn btn-primary w-100 py-2 mb-2" type="submit">
           Sign in
         </button>
-        <p class="text-center">Don't have an <a href="registration.html" style="text-decoration: none;">Account?</a></p>
+        <p class="text-center">Don't have an <a href="registration.php" style="text-decoration: none;">Account?</a></p>
       </form>
     </main>
     <script
