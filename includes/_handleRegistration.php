@@ -1,6 +1,6 @@
 <?php
 include('C:/xampp/htdocs/LOGIN_REGISTRATION/databases/dbcon.php');
-include ('session.php');
+
 $uname = $_POST['uname'];
 $email = $_POST['email'];
 $gender = $_POST['gender'];

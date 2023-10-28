@@ -61,7 +61,7 @@
   <div class="container">
     <h2 class="text-center">Registration</h2>
 
-    <form method="POST" action="_handleRegistration.php">
+    <form method="POST" action="./includes/_handleRegistration.php">
       <div class="form-group">
         <label for="newUsername">New Username</label>
         <input type="text" name="uname" class="form-control" id="newUsername" placeholder="Enter new username"

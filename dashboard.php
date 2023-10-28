@@ -1,6 +1,6 @@
 <?php
 include('C:/xampp/htdocs/LOGIN_REGISTRATION/databases/dbcon.php');
-include('session.php');
+include('C:/xampp/htdocs/LOGIN_REGISTRATION/includes/session.php');
 ?>
 
 <!DOCTYPE html>
@@ -29,15 +29,31 @@ include('session.php');
       <div class="col-lg-12 mt-5">
         <label class="form-control">
           Hello : <span class="text-primary">
-            <?php
+            <?php 
             echo $row_session['username'];
             ?>
           </span>
         </label>
       </div>
       <div class="col-6">
-        <!-- Your content here -->
-      </div>
+  <div class="card">
+    <div class="card-header">
+      Your Profile
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+      <?php
+        if (!empty($row_session['ufile'])) {
+          echo '<img src="/LOGIN_REGISTRATION/img/' . $row_session['ufile'] . '" alt="User Profile Picture" class="img-fluid">';
+        }
+      ?>
+      </p>
+      
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 

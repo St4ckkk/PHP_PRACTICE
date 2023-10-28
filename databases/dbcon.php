@@ -1,5 +1,4 @@
 
-<!--DBCON.PHP CODE-->
 <?php
 $server = "localhost";
 $username = "root";
